@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 252, 253);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Top navbar properties */
+.top_navbar {
+    height: 55px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+
+    /* Navbar container properties */
+    .contents {
+        margin: auto;
+        width: 65%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Logo Properties */
+        .logo {
+            width: 125px;
+            height: auto;
+            margin-right: auto;
+        }
+
+        /* Button properties */
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: lighter;
+            padding: 18px;
+            font-size: 13px;
+            color: rgb(60, 66, 78);
+            border: none;
+
+            i {
+                margin-right: 10px;
+                margin-left: 5px;
+                font-size: 20px;
+            }
+
+            .fa-indian-rupee-sign {
+                font-size: 14px;
+                margin-right: 0px;
+            }
+
+            span {
+                margin-right: 10px;
+            }
+        }
+
+        .rupees {
+            padding: 16px;
+        }
+    }
+}
+
+/* Button pseudo properties of top navbar */
+button:hover {
+    background-color: #eef3f5;
+    cursor: pointer;
+
+    i {
+        background-color: #eef3f5;
+    }
+
+    span {
+        background-color: #eef3f5;
+    }
+}
+
+/* Logo pseudo property of top navbar*/
+.logo:hover {
+    cursor: pointer;
+}
+
