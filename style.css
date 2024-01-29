@@ -325,3 +325,82 @@
         }
     }
 }
+
+/* Logo bar properties below search box */
+.logobar {
+    width: 65%;
+    height: 50px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 30%;
+    }
+
+    span {
+        font-size: 12px;
+        color: rgb(108, 112, 122);
+    }
+}
+
+/* Image and calendar box */
+.image_and_calendar {
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background image box properties */
+    .imagebox {
+        height: 90%;
+        width: 65%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.295), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.837), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255)), url(paris.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        /* Heading properties */
+        h2 {
+            background-color: transparent;
+            color: white;
+            margin-left: 30px;
+            align-self: flex-start;
+            margin-bottom: auto;
+            margin-top: 40px;
+        }
+
+        /* Calendar box properties */
+        .calendar {
+            height: 65%;
+            width: 65%;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+            /* Places bar properties */
+            .place {
+                background-color: white;
+                height: 50px;
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow-x: scroll;
+                margin-top: 10px;
+            }
+
+            /* Months container properties inside calendar box*/
+        }
+    }
+}
