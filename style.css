@@ -358,8 +358,7 @@
     .imagebox {
         height: 90%;
         width: 65%;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
+        border-radius: 20px;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.295), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.837), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255)), url(paris.jpg);
         background-position: center;
         background-size: cover;
@@ -382,7 +381,7 @@
         /* Calendar box properties */
         .calendar {
             height: 65%;
-            width: 70%;
+            width: 65%;
             background-color: white;
             border-radius: 15px;
             display: flex;
@@ -393,290 +392,16 @@
             /* Places bar properties */
             .place {
                 background-color: white;
-                height: 40px;
+                height: 50px;
                 width: 95%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                overflow-x: scroll;
                 margin-top: 10px;
-                
-                .country_buttons {
-                    width: 92%;
-                    overflow-x: hidden;
-                    white-space: nowrap;
-                    
-                    .london{
-                        color: white;
-                        background-color: black;
-                        border: solid 1px rgb(0, 0, 0);
-                    }
-
-                    button {
-                        padding: 8px;
-                        padding-left: 10px;
-                        padding-right: 10px;
-                        white-space: nowrap;
-                        border-radius: 20px;
-                        margin-right: 5px;
-                        font-size: 12px;
-                        font-weight: bolder;
-                        border: solid 1px rgb(204, 203, 203);
-                    }
-
-                    button:Hover{
-                        cursor: pointer;
-                    }
-                }
-
-                .next_button{
-                    width: 5%;
-
-                    button{
-                        padding: 8px;
-                        padding-left: 12px;
-                        padding-right:12px;
-                        border-radius: 50%;
-                        font-size: 12px;
-                        font-weight: bolder;
-                        border: solid 1px rgb(204, 203, 203);
-                        background-color: white;
-                    }
-
-                    button:Hover{
-                        cursor: pointer;
-                    }
-                }
             }
 
             /* Months container properties inside calendar box*/
-            .months{
-                width: 95%;
-                height: 80%;
-                margin-top: 15px;
-                display: grid;
-                grid-template-columns: 325px 325px;
-                row-gap: 8px;
-                column-gap: 15px;
-                background-color: white;
-
-                button{
-                    display: flex;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    font-size: 14px;
-                    font-weight: bolder;
-                    border: solid 1px rgb(209, 209, 209);
-                    border-radius: 10px;
-                    background-color: white;
-
-                    .month{
-                        margin-left: 12px;
-                    }
-
-                    .dollar{
-                        margin-left: auto;
-
-                        .green{
-                            color: rgb(13, 91, 13);
-                        }
-
-                        .silver{
-                            color: silver;
-                        }
-
-                        .black{
-                            color: black;
-                        }
-                    }
-
-                    .symbol{
-                        margin-left: 5px;
-                        margin-right: 20px;
-                    }
-                }
-
-                button:Hover{
-                    cursor: pointer;
-                }
-            }
         }
-    }
-}
-
-/* Top hotels area */
-.top_hotels {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px;
-    background-color: white;
-    width: 100%;
-    height: 450px;
-
-    /* Heading property */
-    .heading {
-        width: 65%;
-        background-color: white;
-        margin-bottom: 20px;
-
-        h2 {
-            background-color: white;
-        }
-    }
-
-    /* Country selection */
-    .country {
-        width: 65%;
-        display: flex;
-        margin-bottom: 15px;
-        background-color: white;
-
-        div {
-            padding-left: 21px;
-            padding-right: 21px;
-            padding-bottom: 5px;
-            font-weight: bolder;
-            border-bottom: solid 1px rgb(181, 181, 181);
-            color: rgba(108, 112, 122);
-            background-color: white;
-        }
-
-        .spain {
-            color: black;
-            border-bottom: solid black 2px;
-        }
-
-        /* Hover properties on country */
-        div:hover {
-            color: black;
-            cursor: pointer;
-        }
-    }
-
-    /* Hotels pictures and details property in top hotels */
-    .hotel_and_details {
-        width: 65%;
-        display: flex;
-        justify-content: space-between;
-
-        .hotels {
-            width: 310px;
-            height: 350px;
-            border-radius: 5%;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
-            /* First hotel */
-            .hotel_image1{
-                width: 100%;
-                height: 70%;
-                background-image: url("Es Princep.webp");
-                border-top-right-radius: 5%;
-                border-top-left-radius: 5%;
-            }
-
-            /* Second hotel */
-            .hotel_image2{
-                width: 100%;
-                height: 70%;
-                background-image: url("Hotel\ Carmen\ Teresa.webp");
-                border-top-right-radius: 5%;
-                border-top-left-radius: 5%;
-            }
-
-            /* Third hotel */
-            .hotel_image3{
-                width: 100%;
-                height: 70%;
-                background-image: url("Hotel\ Balneario\ Las\ Arenas.webp");
-                border-top-right-radius: 5%;
-                border-top-left-radius: 5%;
-            }
-
-            /* Properties of every hotel details */
-            .name{
-                margin-top: 15px;
-                margin-left: 15px;
-                font-size: 13px;
-            }
-
-            .rating{
-                display: flex;
-                margin-top: 10px;
-                margin-left: 15px;
-
-                .one{
-                    font-size: 13px;
-                    font-weight: bolder;
-                    margin-right: 8px;
-                }
-
-                .two{
-                    font-size: 13px;
-                    margin-right: 20px;
-                }
-
-                .three{
-                    font-size: 13px;
-
-                    i{
-                        margin-right: 5px;
-                    }
-                }
-            }
-
-            .other_details{
-                display: flex;
-                margin-top: 15px;
-                margin-left: 20px;
-
-                .one{
-                    font-size: 14px;
-                    font-weight: bolder;
-                    margin-right: 15px;
-                    
-                    i{
-                        margin-right: 5px;
-                        color: rgb(0, 106, 255);
-                    }
-                }
-
-                .two{
-                    font-size: 14px;
-                    font-weight: bolder;
-
-                    i{
-                        margin-right: 5px;
-                        color: rgb(0, 106, 255);
-                    }
-                }
-            }
-        }
-    }
-}
-
-/* More stays */
-.more_stays{
-    width: 100%;
-    height: 70px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-
-    .more_search{
-        width: 65%;
-        background-color: white;
-        display: flex;
-        justify-content: end;
-        font-size: 15px;
-        font-weight: bolder;
-        color: rgb(7, 69, 156);
-        p{
-            margin-right: 10px;
-        }
-    }
-
-    .more_search:hover{
-        cursor: pointer;
     }
 }
