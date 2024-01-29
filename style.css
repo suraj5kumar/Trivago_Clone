@@ -630,7 +630,7 @@
                 margin-left: 20px;
 
                 .one{
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: bolder;
                     margin-right: 15px;
                     
@@ -641,7 +641,7 @@
                 }
 
                 .two{
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: bolder;
 
                     i{
@@ -657,7 +657,7 @@
 /* More stays */
 .more_stays{
     width: 100%;
-    height: 15px;
+    height: 70px;
     background-color: white;
     display: flex;
     justify-content: center;
